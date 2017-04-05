@@ -7,7 +7,7 @@ What Each Command Does:
   node dixby.js my-tweets:
     This will show the last 20 tweets and when they were created at in your terminal/bash window.
   
-  node dixby.js spotify-this-song '<song name here>'
+  node dixby.js spotify-this-song 'song name here':
     This will show the following information about the song in your terminal/bash window
       Artist(s)
       The song's name
@@ -15,7 +15,7 @@ What Each Command Does:
       The album that the song is from
       If no song is provided then your program will default to "The Sign" by Ace of Base
 
-  node dixby.js movie-this '<movie name here>'
+  node dixby.js movie-this 'movie name here':
     This will output the following information to your terminal/bash window:
       Title of the movie
       Year the movie came out
@@ -28,7 +28,7 @@ What Each Command Does:
       Rotten Tomatoes URL
     If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
 
-node dixby.js do-what-it-says
+node dixby.js do-what-it-says:
   Using the fs Node package, DIXBY will take the text inside of random.txt and then use it to call one of DIXBY's commands.
   It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
 
