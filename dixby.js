@@ -92,30 +92,30 @@ function spotifyThisSong(songName) {
 }
 
 // Movie function
-function movieThis (movieParam){
+function movieThis (movieName){
 
-    if (movieParam == undefined){
+    if (movieName == undefined){
 
-        movieParam = "Mr. Nobody";
+        movieName = "Mr. Nobody";
     }
 
-    var queryUrl = 'http://www.omdbapi.com/?t=' + movieParam + '&y=&plot=short&tomatoes=true&r=json';
+    var queryUrl = 'http://www.omdbapi.com/?t=' + movieName + '&y=&plot=short&tomatoes=true&r=json';
 
     request(queryUrl, function(error, response, body) {
 
         if(!error && response.statusCode == 200) {
 
-            var jsonPar = JSON.parse(body);
+            var data = JSON.parse(body);
 
-            console.log("Movie Title: " + jsonPar.Title);
-            console.log("Year Released: " + jsonPar.Year);
-            console.log("IMDB Rating: " + jsonPar.imdbRating);
-            console.log("Country: " + jsonPar.Country);
-            console.log("Language: " + jsonPar.Language);
-            console.log("Plot: " + jsonPar.Plot);
-            console.log("Actors: " + jsonPar.Actors);
-            console.log("Rotten Tomatoes Rating: " + jsonPar.tomatoRating);
-            console.log("Rotten Tomatoes URL: " + jsonPar.tomatoURL);
+            console.log("Movie Title: " + data.Title);
+            console.log("Year Released: " + data.Year);
+            console.log("IMDB Rating: " + data.imdbRating);
+            console.log("Country: " + data.Country);
+            console.log("Language: " + data.Language);
+            console.log("Plot: " + data.Plot);
+            console.log("Actors: " + data.Actors);
+            console.log("Rotten Tomatoes Rating: " + data.Ratings[1].Value);
+            console.log("Rotten Tomatoes URL: " + data.tomatoURL);
         }
     });
 }
