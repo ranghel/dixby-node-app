@@ -32,3 +32,7 @@ node dixby.js do-what-it-says:
   Using the fs Node package, DIXBY will take the text inside of random.txt and then use it to call one of DIXBY's commands.
   It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
 
+![my-tweets](https://cloud.githubusercontent.com/assets/22923940/24759811/b7a33a44-1ab4-11e7-9fc7-27163b64d9f2.jpg)
+![spotify-this-song](https://cloud.githubusercontent.com/assets/22923940/24759817/bbc3cde6-1ab4-11e7-8dcd-ab0b9adc4f7d.jpg)
+![movie-this](https://cloud.githubusercontent.com/assets/22923940/24759830/c0711f2e-1ab4-11e7-9807-5e72ee269d7f.jpg)
+![do-what-it-says](https://cloud.githubusercontent.com/assets/22923940/24759836/c3369298-1ab4-11e7-8268-76a62c181f2e.jpg)
